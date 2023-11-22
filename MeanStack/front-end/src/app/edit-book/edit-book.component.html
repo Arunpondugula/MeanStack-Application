@@ -1,0 +1,27 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Update Book </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> Tiltle</label>
+            <input type="text" class ="form-control" id = "bookname"
+                [(ngModel)] = "Book.bookname" name = "bookname">
+        </div>
+    
+        <div class="form-group">
+            <label> Author</label>
+            <input type="text" class ="form-control" id = "author"
+                [(ngModel)] = "Book.author" name = "author">
+        </div>
+    
+        <div class="form-group">
+            <label> Publication</label>
+            <input type="text" class ="form-control" id = "publication"
+                [(ngModel)] = "Book.publication" name = "publication">
+        </div>
+    
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div> 
+
